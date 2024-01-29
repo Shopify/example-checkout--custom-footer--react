@@ -7,6 +7,7 @@ import {
   useShop,
 } from '@shopify/ui-extensions-react/checkout';
 
+// [START custom-footer.render]
 export default function Extension() {
   const {storefrontUrl} = useShop();
 
@@ -32,3 +33,4 @@ export default function Extension() {
     </InlineLayout>
   );
 }
+// [END custom-footer.render]
