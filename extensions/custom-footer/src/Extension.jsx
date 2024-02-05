@@ -3,14 +3,14 @@ import {
   InlineLayout,
   InlineStack,
   Link,
-  ListItem,
   Text,
+  View,
   useShop,
-} from "@shopify/ui-extensions-react/checkout";
+} from '@shopify/ui-extensions-react/checkout';
 
 // [START custom-footer.render]
 export default function Extension() {
-  const { storefrontUrl } = useShop();
+  const {storefrontUrl} = useShop();
 
   return (
     <InlineLayout
@@ -49,23 +49,23 @@ export default function Extension() {
         inlineAlignment="end"
         accessibilityRole="orderedList"
       >
-        <ListItem>
+        <View accessibilityRole="listItem">
           <Link to={new URL("/sizing", storefrontUrl).href}>Sizing</Link>
-        </ListItem>
-        <ListItem>
+        </View>
+        <View accessibilityRole="listItem">
           <Link to={new URL("/terms", storefrontUrl).href}>Terms</Link>
-        </ListItem>
-        <ListItem>
+        </View>
+        <View accessibilityRole="listItem">
           <Link to={new URL("/privacy", storefrontUrl).href}>Privacy</Link>
-        </ListItem>
-        <ListItem>
+        </View>
+        <View accessibilityRole="listItem">
           <Link to={new URL("/faq", storefrontUrl).href}>FAQ</Link>
-        </ListItem>
-        <ListItem>
+        </View>
+        <View accessibilityRole="listItem">
           <Link to={new URL("/accessibility", storefrontUrl).href}>
             Accessibility
           </Link>
-        </ListItem>
+        </View>
       </InlineStack>
     </InlineLayout>
   );
