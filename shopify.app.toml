@@ -1,3 +1,3 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-scopes = ""
+scopes = "read_checkout_branding_settings,write_checkout_branding_settings"
